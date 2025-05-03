@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get a Quote | Sage Events Ltd</title>
+    <link rel="stylesheet" href="Quote.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/images/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/images/favicon/favicon.svg" />
+   <link rel="shortcut icon" href="/images/favicon/favicon.ico" />
+   <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png" />
+   <meta name="apple-mobile-web-app-title" content="Sage Events" />
+   <link rel="manifest" href="/images/favicon/site.webmanifest" />
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/logos/LOGO1.png" alt="Sage Events Ltd Logo">
+                
+            </a>
+            
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
+                <a href="quote.html" class="quote-btn ">Get Quote</a>
+            </div>
+            
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Quote Hero Section -->
+    <section class="page-hero quote-hero">
+        <div class="container">
+            <h1>GET A QUOTE</h1>
+            <p>Let us help you plan your perfect event</p>
+        </div>
+    </section>
+
+    <!-- Quote Process Section -->
+    <section class="quote-process">
+        <div class="container">
+            <h2 class="section-title">OUR QUOTE PROCESS</h2>
+            <p class="section-subtitle">Simple steps to get your customized event quote</p>
+            
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h3>Fill the Form</h3>
+                    <p>Complete our quick quote request form with your event details</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h3>Consultation</h3>
+                    <p>We'll contact you to discuss your requirements in detail</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h3>Receive Quote</h3>
+                    <p>Get your customized proposal within 48 hours</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Form Section -->
+    <section class="quote-form-section">
+        <div class="container">
+            <div class="form-container">
+                <div class="form-intro">
+                    <h2>REQUEST A QUOTE</h2>
+                    <p>Fill out the form below and we'll get back to you with a customized quote for your event. All fields are required unless marked optional.</p>
+                    
+                    <div class="form-features">
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>No obligation quote</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Response within 24 hours</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Customized solutions</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <form id="quoteForm" class="quote-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Your Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Company Name</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="event-type">Event Type *</label>
+                        <select id="event-type" name="event-type" required>
+                            <option value="" disabled selected>Select Event Type</option>
+                            <option value="conference">Conference</option>
+                            <option value="corporate">Corporate Event</option>
+                            <option value="product-launch">Product Launch</option>
+                            <option value="exhibition">Exhibition</option>
+                            <option value="virtual">Virtual/Hybrid Event</option>
+                            <option value="wedding">Wedding</option>
+                            <option value="social">Social Gathering</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="event-date">Event Date *</label>
+                            <input type="date" id="event-date" name="event-date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="attendees">Expected Attendees *</label>
+                            <select id="attendees" name="attendees" required>
+                                <option value="" disabled selected>Select Number</option>
+                                <option value="1-50">1-50</option>
+                                <option value="51-100">51-100</option>
+                                <option value="101-250">101-250</option>
+                                <option value="251-500">251-500</option>
+                                <option value="501-1000">501-1000</option>
+                                <option value="1000+">1000+</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="venue">Venue (if known)</label>
+                        <input type="text" id="venue" name="venue">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Services Required *</label>
+                        <div class="checkbox-group">
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="service1" name="services[]" value="event-planning">
+                                <label for="service1">Event Planning & Management</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="service2" name="services[]" value="virtual-events">
+                                <label for="service2">Virtual Events & Live Streaming</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="service3" name="services[]" value="video-production">
+                                <label for="service3">Video & Photo Production</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="service4" name="services[]" value="equipment-hire">
+                                <label for="service4">Equipment Hire</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="service5" name="services[]" value="event-design">
+                                <label for="service5">Event Design & Theming</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="service6" name="services[]" value="branding">
+                                <label for="service6">Corporate Branding</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="service7" name="services[]" value="other-services">
+                                <label for="service7">Other Services</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="budget">Estimated Budget *</label>
+                        <select id="budget" name="budget" required>
+                            <option value="" disabled selected>Select Budget Range</option>
+                            <option value="under-50k">Under KES 50,000</option>
+                            <option value="50k-100k">KES 50,000 - 100,000</option>
+                            <option value="100k-250k">KES 100,000 - 250,000</option>
+                            <option value="250k-500k">KES 250,000 - 500,000</option>
+                            <option value="500k-1m">KES 500,000 - 1,000,000</option>
+                            <option value="over-1m">Over KES 1,000,000</option>
+                            <option value="not-sure">Not Sure</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Event Details *</label>
+                        <textarea id="message" name="message" rows="6" required placeholder="Tell us about your event, including any specific requirements, themes, or special considerations"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="how-heard">How did you hear about us?</label>
+                        <select id="how-heard" name="how-heard">
+                            <option value="" disabled selected>Select Option</option>
+                            <option value="search">Search Engine</option>
+                            <option value="social">Social Media</option>
+                            <option value="referral">Referral</option>
+                            <option value="previous-client">Previous Client</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-submit">
+                        <button type="submit" class="btn-primary">
+                            <i class="fas fa-paper-plane"></i> Submit Quote Request
+                        </button>
+                        <p class="form-note">We'll get back to you within 24 hours with a customized quote</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us">
+        <div class="container">
+            <h2 class="section-title">WHY CHOOSE SAGE EVENTS</h2>
+            <p class="section-subtitle">We make the quote and planning process simple and transparent</p>
+            
+            <div class="reasons-grid">
+                <div class="reason-card">
+                    <div class="reason-icon">
+                        <i class="fas fa-hand-holding-usd"></i>
+                    </div>
+                    <h3>Competitive Pricing</h3>
+                    <p>We offer transparent, competitive pricing with no hidden costs</p>
+                </div>
+                
+                <div class="reason-card">
+                    <div class="reason-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Fast Response</h3>
+                    <p>Get your customized quote within 24 hours of submitting your request</p>
+                </div>
+                
+                <div class="reason-card">
+                    <div class="reason-icon">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <h3>Detailed Proposals</h3>
+                    <p>Our quotes include detailed breakdowns of all services and costs</p>
+                </div>
+                
+                <div class="reason-card">
+                    <div class="reason-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Dedicated Planner</h3>
+                    <p>You'll work with a dedicated event planner throughout the process</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">WHAT OUR CLIENTS SAY</h2>
+            <p class="section-subtitle">About our quoting and planning process</p>
+            
+            <div class="testimonial-slider">
+                <div class="testimonial-slide active">
+                    <div class="testimonial-content">
+                        <p>"Sage Events provided the most detailed and transparent quote we received from any vendor. Their pricing was competitive and they delivered exactly what was promised."</p>
+                        <div class="client-info">
+                            <h4>NOKIA Kenya</h4>
+                            <span>Corporate Rebranding Project</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <p>"The quote process was so easy and their response was incredibly fast. They understood our requirements perfectly and suggested creative solutions we hadn't considered."</p>
+                        <div class="client-info">
+                            <h4>Oxford University</h4>
+                            <span>Digital Manifesto Launch</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <p>"We received three quotes for our conference and Sage Events was the only one that took time to understand our specific needs before providing a proposal."</p>
+                        <div class="client-info">
+                            <h4>USAID</h4>
+                            <span>MODS Virtual Conference</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-nav">
+                <button class="testimonial-prev"><i class="fas fa-chevron-left"></i></button>
+                <div class="testimonial-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <button class="testimonial-next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">QUOTE FAQS</h2>
+            <p class="section-subtitle">Common questions about getting a quote</p>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How long does it take to get a quote?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We typically respond to quote requests within 24 hours with an initial proposal. For complex events, we may require up to 48 hours to prepare a comprehensive quote.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Is there any cost to get a quote?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>No, our quoting service is completely free with no obligation. We only charge for services once you've approved a quote and signed our service agreement.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What information do I need to provide?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>The more details you can provide about your event (date, location, expected attendees, services needed), the more accurate our quote will be. However, we can provide preliminary estimates with basic information.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can I get a quote for multiple event options?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! We're happy to provide comparative quotes for different venues, service packages, or event formats to help you make the best decision.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How long is a quote valid for?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our quotes are typically valid for 14 days, after which we may need to review pricing based on vendor availability and other factors.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>READY TO DISCUSS YOUR EVENT?</h2>
+            <p>Contact us directly if you have any questions about our services or quoting process</p>
+            <div class="cta-btns">
+                <a href="contact.html" class="btn-primary">Contact Us</a>
+                <a href="tel:+254720299423" class="btn-secondary"><i class="fas fa-phone"></i> Call Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo">
+                        <img src="images/logos/LOGO1.png" alt="Sage Events Ltd Logo">
+                       
+                    </div>
+                    <p>We are an experiential events company driven by a Professional, Creative & Passionate team specializing in premium event solutions.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="quote.html">Get a Quote</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="services.html#virtual">Virtual Events</a></li>
+                        <li><a href="services.html#production">Video Production</a></li>
+                        <li><a href="services.html#management">Event Management</a></li>
+                        <li><a href="services.html#design">Event Design</a></li>
+                        <li><a href="services.html#equipment">Equipment Hire</a></li>
+                        <li><a href="services.html#branding">Corporate Branding</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> <span>Nairobi: Manula Manor, Manula Lane, off Karen Road</span></li>
+                        <li><i class="fas fa-map-marker-alt"></i> <span>Nanyuki: Nanyuki Mali, Nanyuki Meru Highway</span></li>
+                        <li><i class="fas fa-phone"></i> <span>+254720299423</span></li>
+                        <li><i class="fas fa-envelope"></i> <span>info@sageevents.co.ke</span></li>
+                        <li><i class="fas fa-globe"></i> <span>www.sageevents.co.ke</span></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Sage Events Ltd. All Rights Reserved.</p>
+                <p class="developer-credit">Designed by |<a href="https://fraittechnologies.ct.ws" target="_blank" rel="noopener noreferrer"> Frank Mwaniki</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <!-- WhatsApp Button -->
+<a href="https://wa.me/254720299423" class="whatsapp-button" target="_blank" aria-label="Chat with us on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/animation.js"></script>
+    <script src="js/Quote.js"></script>
+    
+    <!-- Quote Page Specific Script -->
+   
+</body>
+</html>

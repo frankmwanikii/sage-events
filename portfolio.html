@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Portfolio | Sage Events Ltd</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/images/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/images/favicon/favicon.svg" />
+   <link rel="shortcut icon" href="/images/favicon/favicon.ico" />
+   <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png" />
+   <meta name="apple-mobile-web-app-title" content="Sage Events" />
+   <link rel="manifest" href="/images/favicon/site.webmanifest" />
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/logos/LOGO1.png" alt="Sage Events Ltd Logo">
+                
+            
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="portfolio.html" class="active">Portfolio</a>
+                <a href="contact.html">Contact</a>
+                <a href="quote.html" class="quote-btn">Get Quote</a>
+            </div>
+            
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Portfolio Hero Section -->
+    <section class="page-hero portfolio-hero">
+        <div class="container">
+            <h1>OUR PORTFOLIO</h1>
+            <p>Showcasing our prestigious projects and satisfied clients</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Filter -->
+    <section class="portfolio-filter">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="virtual">Virtual Events</button>
+                <button class="filter-btn" data-filter="conference">Conferences</button>
+                <button class="filter-btn" data-filter="production">Video Production</button>
+                <button class="filter-btn" data-filter="branding">Branding</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="portfolio-grid-section">
+        <div class="container">
+            <div class="portfolio-items">
+                <!-- Nokia Project -->
+                <div class="portfolio-item" data-category="conference,branding" id="nokia">
+                    <div class="portfolio-image">
+                        <img src="images/logos/nokia.png" alt="Nokia Project">
+                        <div class="portfolio-overlay">
+                            <h3>NOKIA</h3>
+                            <p>Mobile World Congress Expo & Corporate Rebrand</p>
+                            <a href="#" class="btn-secondary view-project">View Project</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-details">
+                        <h3>NOKIA</h3>
+                        <p class="project-type">Conference & Branding</p>
+                        <p class="project-description">Full corporate branding for Nokia Kenya & Ethiopia offices and conceptualization of their yearly Mobile World Congress event with demo booths showcasing new technology.</p>
+                        <a href="#" class="btn-primary">Case Study</a>
+                    </div>
+                </div>
+                
+                <!-- USAID Project -->
+                <div class="portfolio-item" data-category="virtual" id="usaid">
+                    <div class="portfolio-image">
+                        <img src="images/logos/usaid.png" alt="USAID Project">
+                        <div class="portfolio-overlay">
+                            <h3>USAID</h3>
+                            <p>MODS Virtual Conference Production</p>
+                            <a href="#" class="btn-secondary view-project">View Project</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-details">
+                        <h3>USAID/MODS</h3>
+                        <p class="project-type">Virtual Conference</p>
+                        <p class="project-description">Created a seamless link between in-person conference and virtual experience for USAID team, MODS & different Local County Teams.</p>
+                        <a href="#" class="btn-primary">Case Study</a>
+                    </div>
+                </div>
+                
+                <!-- Oxford University Project -->
+                <div class="portfolio-item" data-category="conference,production" id="oxford">
+                    <div class="portfolio-image">
+                        <img src="images/logos/oxford.png" alt="Oxford University Project">
+                        <div class="portfolio-overlay">
+                            <h3>Oxford University</h3>
+                            <p>Digital Manifesto Launch</p>
+                            <a href="#" class="btn-secondary view-project">View Project</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-details">
+                        <h3>Oxford University (BSG)</h3>
+                        <p class="project-type">Conference & Live Streaming</p>
+                        <p class="project-description">End-to-end professional conference organization & management for 4 days with live streaming to a secure custom link in partnership with Bill & Melinda Gates Foundation.</p>
+                        <a href="#" class="btn-primary">Case Study</a>
+                    </div>
+                </div>
+                
+                <!-- Safaricom Project -->
+                <div class="portfolio-item" data-category="conference,virtual" id="safaricom">
+                    <div class="portfolio-image">
+                        <img src="images/logos/safaricom.png" alt="Safaricom Project">
+                        <div class="portfolio-overlay">
+                            <h3>NOKIA & Safaricom</h3>
+                            <p>ERM Virtual Strategy Summit</p>
+                            <a href="#" class="btn-secondary view-project">View Project</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-details">
+                        <h3>NOKIA & Safaricom</h3>
+                        <p class="project-type">Hybrid Conference</p>
+                        <p class="project-description">High profile strategy summit with Safaricom team attending physically and Nokia management joining virtually from Finland.</p>
+                        <a href="#" class="btn-primary">Case Study</a>
+                    </div>
+                </div>
+                
+                <!-- Kenya Fertilizer Club Project -->
+                <div class="portfolio-item" data-category="conference" id="fertilizer">
+                    <div class="portfolio-image">
+                        <img src="images/logos/afriQom.jpg" alt="Kenya Fertilizer Club Project">
+                        <div class="portfolio-overlay">
+                            <h3>AFRIGOM Kenya Fertilizer Club</h3>
+                            <p>Launch & VIP Conference</p>
+                            <a href="#" class="btn-secondary view-project">View Project</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-details">
+                        <h3>AFRIGOM Kenya Fertilizer Club</h3>
+                        <p class="project-type">Conference & Event Management</p>
+                        <p class="project-description">Live streaming services, end-to-end conference conceptualization, fabrication, set up & management including protocol management and themed venue setups.</p>
+                        <a href="#" class="btn-primary">Case Study</a>
+                    </div>
+                </div>
+                
+                <!-- Emerging Leaders Project -->
+                <div class="portfolio-item" data-category="production" id="emerging">
+                    <div class="portfolio-image">
+                        <img src="images/logos/kewisco.jpg" alt="Emerging Leaders Project">
+                        <div class="portfolio-overlay">
+                            <h3>Emerging Leaders Foundation</h3>
+                            <p>Student Graduation</p>
+                            <a href="#" class="btn-secondary view-project">View Project</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-details">
+                        <h3>Emerging Leaders Foundation</h3>
+                        <p class="project-type">Graduation & Live Streaming</p>
+                        <p class="project-description">End-to-end conference management and live streaming to client's Facebook account for student graduation event.</p>
+                        <a href="#" class="btn-primary">Case Study</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div class="project-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <!-- Content will be loaded via JavaScript -->
+            </div>
+        </div>
+    </div>
+
+   <!-- Clients Section -->
+   <section class="clients">
+    <div class="container">
+        <h2 class="section-title">TRUSTED BY LEADING BRANDS</h2>
+        <div class="client-logos">
+            <img src="images/logos/nokia.png" alt="Nokia">
+            <img src="images/logos/kws.jpg" alt="kws">
+            <img src="images/logos/oxford.png" alt="Oxford University">
+            <img src="images/logos/maiyan.jpg" alt="maiyan">
+            <img src="images/logos/cigma.jpg" alt="cigma">
+            <img src="images/logos/kQ.jpg" alt="Kenya Airways">
+        </div>
+    </div>
+</section>
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>INSPIRED BY OUR WORK?</h2>
+            <p>Let's collaborate to create something extraordinary for your next event.</p>
+            <div class="cta-btns">
+                <a href="contact.html" class="btn-primary">Contact Us</a>
+                <a href="#quote" class="btn-secondary">Get a Quote</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo">
+                        <img src="images/logos/LOGO1.png" alt="Sage Events Ltd Logo">
+                      
+                    </div>
+                    <p>We are an experiential events company driven by a Professional, Creative & Passionate team specializing in premium event solutions.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#quote">Get a Quote</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="services.html#virtual">Virtual Events</a></li>
+                        <li><a href="services.html#production">Video Production</a></li>
+                        <li><a href="services.html#management">Event Management</a></li>
+                        <li><a href="services.html#design">Event Design</a></li>
+                        <li><a href="services.html#equipment">Equipment Hire</a></li>
+                        <li><a href="services.html#branding">Corporate Branding</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> <span>Nairobi: Manula Manor, Manula Lane, off Karen Road</span></li>
+                        <li><i class="fas fa-map-marker-alt"></i> <span>Nanyuki: Nanyuki Mali, Nanyuki Meru Highway</span></li>
+                        <li><i class="fas fa-phone"></i> <span>+254720299423</span></li>
+                        <li><i class="fas fa-envelope"></i> <span>info@sageevents.co.ke</span></li>
+                        <li><i class="fas fa-globe"></i> <span>www.sageevents.co.ke</span></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Sage Events Ltd. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <!-- WhatsApp Button -->
+<a href="https://wa.me/254720299423" class="whatsapp-button" target="_blank" aria-label="Chat with us on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/animation.js"></script>
+</body>
+</html>

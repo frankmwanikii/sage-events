@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipment List Request | Sage Events Ltd</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/images/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/images/favicon/favicon.svg" />
+   <link rel="shortcut icon" href="/images/favicon/favicon.ico" />
+   <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png" />
+   <meta name="apple-mobile-web-app-title" content="Sage Events" />
+   <link rel="manifest" href="/images/favicon/site.webmanifest" />
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/logos/LOGO1.png" alt="Sage Events Ltd Logo">
+               
+            </a>
+            
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
+                <a href="quote.html" class="quote-btn">Get Quote</a>
+            </div>
+            
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Equipment Hero Section -->
+    <section class="page-hero equipment-hero">
+        <div class="container">
+            <h1>EQUIPMENT LIST REQUEST</h1>
+            <p>Browse our comprehensive inventory of premium event equipment</p>
+        </div>
+    </section>
+
+    <!-- Equipment Categories Section -->
+    <section class="equipment-categories">
+        <div class="container">
+            <h2 class="section-title">OUR EQUIPMENT CATEGORIES</h2>
+            <p class="section-subtitle">High-quality gear for every event need</p>
+            
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>Audio-Visual</h3>
+                    <p>Professional sound systems, projectors, LED screens, and more</p>
+                    <a href="#av-form" class="btn-secondary"> AV List</a>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Lighting</h3>
+                    <p>Stage lighting, spotlights, moving heads, and effects</p>
+                    <a href="#lighting-form" class="btn-secondary"> Lighting List</a>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-chalkboard"></i>
+                    </div>
+                    <h3>Staging</h3>
+                    <p>Modular stages, risers, dance floors, and staging accessories</p>
+                    <a href="#staging-form" class="btn-secondary"> Staging List</a>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-couch"></i>
+                    </div>
+                    <h3>Decor</h3>
+                    <p>Chairs, tables, lounges, and specialty furniture</p>
+                    <a href="#furniture-form" class="btn-secondary"> Decor List</a>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-satellite-dish"></i>
+                    </div>
+                    <h3>Streaming, Videography & Photography</h3>
+                    <p>Live streaming, recording, and broadcast equipment</p>
+                    <a href="#broadcast-form" class="btn-secondary">streaming List</a>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-umbrella-beach"></i>
+                    </div>
+                    <h3>Tents & Structures</h3>
+                    <p>Marquees, canopies, and temporary structures</p>
+                    <a href="#tents-form" class="btn-secondary"> Tents List</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Full Equipment List Request Section -->
+    <section class="full-equipment-request">
+        <div class="container">
+            <div class="request-container">
+                <div class="request-info">
+                    <h2>REQUEST FULL EQUIPMENT LIST</h2>
+                    <p>Get our complete inventory catalog with specifications, pricing, and high-resolution images of all our available equipment.</p>
+                    
+                    <div class="features-list">
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Detailed specifications for each item</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>High-resolution photos</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Hire rates and packages</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Technical requirements</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <form id="equipmentForm" class="equipment-form">
+                    <div class="form-group">
+                        <label for="eq-name">Your Name *</label>
+                        <input type="text" id="eq-name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="eq-company">Company Name</label>
+                        <input type="text" id="eq-company" name="company">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="eq-email">Email Address *</label>
+                        <input type="email" id="eq-email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="eq-phone">Phone Number *</label>
+                        <input type="tel" id="eq-phone" name="phone" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="eq-event-date">Event Date (if applicable)</label>
+                        <input type="date" id="eq-event-date" name="event-date">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="eq-interests">Equipment Interests (optional)</label>
+                        <select id="eq-interests" name="interests" multiple>
+                            <option value="av">Audio-Visual</option>
+                            <option value="lighting">Lighting</option>
+                            <option value="staging">Staging</option>
+                            <option value="furniture">Furniture</option>
+                            <option value="broadcast">Broadcast</option>
+                            <option value="tents">Tents & Structures</option>
+                        </select>
+                        <small>Hold Ctrl/Cmd to select multiple items</small>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="eq-notes">Additional Notes</label>
+                        <textarea id="eq-notes" name="notes" rows="4"></textarea>
+                    </div>
+                    
+                    <div class="form-submit">
+                        <button type="submit" class="btn-primary">
+                            <i class="fas fa-file-download"></i> Request Equipment List
+                        </button>
+                        <p class="form-note">We'll email you the full catalog within 24 hours</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category-Specific Forms (Hidden Initially) -->
+    <section id="av-form" class="category-form">
+        <div class="container">
+            <div class="form-container">
+                <div class="form-intro">
+                    <h2>AUDIO-VISUAL EQUIPMENT LIST</h2>
+                    <p>Request our detailed audio-visual equipment catalog including specifications, photos, and hire rates.</p>
+                    <div class="equipment-preview">
+                        <h4>Sample Equipment:</h4>
+                        <ul>
+                            <li>Professional PA Systems</li>
+                            <li>HD Projectors & Screens</li>
+                            <li>LED Video Walls</li>
+                            <li>Conference Microphones</li>
+                            <li>Wireless Presentation Systems</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <form class="category-request-form">
+                    <input type="hidden" name="category" value="audio-visual">
+                    <div class="form-group">
+                        <label for="av-name">Your Name *</label>
+                        <input type="text" id="av-name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="av-email">Email Address *</label>
+                        <input type="email" id="av-email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="av-phone">Phone Number</label>
+                        <input type="tel" id="av-phone" name="phone">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="av-requirements">Specific Requirements</label>
+                        <textarea id="av-requirements" name="requirements" rows="4" placeholder="Any specific AV equipment you're interested in?"></textarea>
+                    </div>
+                    
+                    <div class="form-submit">
+                        <button type="submit" class="btn-primary">Request AV List</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Similar sections for other categories (lighting-form, staging-form, etc.) would go here -->
+
+    <section id="#lighting-form" class="category-form">
+        <div class="container">
+            <div class="form-container">
+                <div class="form-intro">
+                    <h2>AUDIO-VISUAL EQUIPMENT LIST</h2>
+                    <p>Request our detailed audio-visual equipment catalog including specifications, photos, and hire rates.</p>
+                    <div class="equipment-preview">
+                        <h4>Sample Equipment:</h4>
+                        <ul>
+                            <li>Professional PA Systems</li>
+                            <li>HD Projectors & Screens</li>
+                            <li>LED Video Walls</li>
+                            <li>Conference Microphones</li>
+                            <li>Wireless Presentation Systems</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <form class="category-request-form">
+                    <input type="hidden" name="category" value="audio-visual">
+                    <div class="form-group">
+                        <label for="av-name">Your Name *</label>
+                        <input type="text" id="av-name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="av-email">Email Address *</label>
+                        <input type="email" id="av-email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="av-phone">Phone Number</label>
+                        <input type="tel" id="av-phone" name="phone">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="av-requirements">Specific Requirements</label>
+                        <textarea id="av-requirements" name="requirements" rows="4" placeholder="Any specific AV equipment you're interested in?"></textarea>
+                    </div>
+                    
+                    <div class="form-submit">
+                        <button type="submit" class="btn-primary">Request AV List</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- They follow the same structure as the AV form above -->
+
+    <!-- Why Our Equipment Section -->
+    <section class="equipment-benefits">
+        <div class="container">
+            <h2 class="section-title">WHY CHOOSE OUR EQUIPMENT</h2>
+            <p class="section-subtitle">Premium quality and professional support</p>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Premium Quality</h3>
+                    <p>We maintain only top-tier equipment from leading brands</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-sliders-h"></i>
+                    </div>
+                    <h3>Latest Technology</h3>
+                    <p>Regularly updated inventory with the newest gear</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Full Support</h3>
+                    <p>Includes technical support and operator if needed</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Well Maintained</h3>
+                    <p>All equipment is regularly serviced and tested</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>NEED HELP SELECTING EQUIPMENT?</h2>
+            <p>Our technical team can advise you on the best equipment for your specific event needs</p>
+            <div class="cta-btns">
+                <a href="contact.html" class="btn-primary">Contact Our Team</a>
+                <a href="tel:+254720299423" class="btn-secondary"><i class="fas fa-phone"></i> Call Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo">
+                        <img src="images/logos/LOGO1.png" alt="Sage Events Ltd Logo">
+                      
+                    </div>
+                    <p>We are an experiential events company driven by a Professional, Creative & Passionate team specializing in premium event solutions.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="quote.html">Get a Quote</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="services.html#virtual">Virtual Events</a></li>
+                        <li><a href="services.html#production">Video Production</a></li>
+                        <li><a href="services.html#management">Event Management</a></li>
+                        <li><a href="services.html#design">Event Design</a></li>
+                        <li><a href="services.html#equipment">Equipment Hire</a></li>
+                        <li><a href="services.html#branding">Corporate Branding</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> <span>Nairobi: Manula Manor, Manula Lane, off Karen Road</span></li>
+                        <li><i class="fas fa-map-marker-alt"></i> <span>Nanyuki: Nanyuki Mali, Nanyuki Meru Highway</span></li>
+                        <li><i class="fas fa-phone"></i> <span>+254720299423</span></li>
+                        <li><i class="fas fa-envelope"></i> <span>info@sageevents.co.ke</span></li>
+                        <li><i class="fas fa-globe"></i> <span>www.sageevents.co.ke</span></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Sage Events Ltd. All Rights Reserved. </p>
+                <p class="developer-credit">Designed by |<a href="https://fraittechnologies.ct.ws" target="_blank" rel="noopener noreferrer"> Frank Mwaniki</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- WhatsApp Button -->
+<a href="https://wa.me/254720299423" class="whatsapp-button" target="_blank" aria-label="Chat with us on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/equipment.js"></script>
+</body>
+</html>
